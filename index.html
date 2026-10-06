@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo da Maquiagem 💄</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>💄 Universo da Maquiagem</h1>
+        <p>Beleza, criatividade e expressão!</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#historia">História</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+
+    <main>
+
+        <section id="inicio" class="hero">
+            <h2>Descubra o mundo da maquiagem!</h2>
+            <p>
+                A maquiagem pode ser uma forma de expressar personalidade,
+                criatividade e estilo.
+            </p>
+            <button onclick="mostrarMensagem()">✨ Descobrir mais</button>
+            <p id="mensagem"></p>
+        </section>
+
+        <section id="produtos">
+            <h2>💋 Principais produtos</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>💄 Batom</h3>
+                    <p>Ajuda a destacar e colorir os lábios.</p>
+                </div>
+
+                <div class="card">
+                    <h3>✨ Base</h3>
+                    <p>Ajuda a uniformizar a aparência da pele.</p>
+                </div>
+
+                <div class="card">
+                    <h3>🌸 Blush</h3>
+                    <p>Adiciona cor e destaque às bochechas.</p>
+                </div>
+
+                <div class="card">
+                    <h3>👁️ Sombra</h3>
+                    <p>Permite criar diferentes estilos e combinações.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="historia">
+            <h2>📖 Nossa história</h2>
+
+            <p>
+                Imagine uma pessoa que está começando a descobrir o mundo
+                da maquiagem. Ela conhece diferentes produtos e começa a
+                experimentar novos estilos.
+            </p>
+
+            <p>
+                Com a ajuda da tecnologia e da inteligência artificial,
+                ela encontra novas ideias e percebe que a maquiagem pode
+                ser uma maneira divertida de expressar sua personalidade.
+            </p>
+
+            <p>
+                No final dessa jornada, ela aprende que não existe apenas
+                um jeito certo de usar maquiagem. Cada pessoa pode criar
+                seu próprio estilo!
+            </p>
+        </section>
+
+        <section id="quiz">
+            <h2>🧠 Quiz da Maquiagem</h2>
+
+            <p>Qual produto é usado principalmente para colorir os lábios?</p>
+
+            <button onclick="responder('batom')">Batom</button>
+            <button onclick="responder('base')">Base</button>
+            <button onclick="responder('blush')">Blush</button>
+
+            <p id="resultado"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>💄 Projeto sobre Maquiagem | Desenvolvido com HTML, CSS e JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

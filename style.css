@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff0f5;
+    color: #4a2635;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #e91e63, #ad1457);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #880e4f;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffb6d5;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    padding: 50px 25px;
+    text-align: center;
+}
+
+.hero {
+    background-color: #ffe4ec;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    margin: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ad1457;
+    transform: scale(1.05);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #e91e63;
+    margin-bottom: 10px;
+}
+
+#historia {
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+#quiz {
+    background-color: #fce4ec;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+#resultado {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+#mensagem {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #880e4f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
