@@ -1,107 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universo da Maquiagem 💄</title>
+
+    <title>Quiz da Maquiagem 💄</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>💄 Universo da Maquiagem</h1>
-        <p>Beleza, criatividade e expressão!</p>
-    </header>
+    <main class="caixa-principal">
 
-    <nav>
-        <a href="#inicio">Início</a>
-        <a href="#produtos">Produtos</a>
-        <a href="#historia">História</a>
-        <a href="#quiz">Quiz</a>
-    </nav>
+        <h1>💄 Quiz da Maquiagem</h1>
 
-    <main>
+        <!-- TELA INICIAL -->
+        <section class="tela-inicial">
 
-        <section id="inicio" class="hero">
-            <h2>Descubra o mundo da maquiagem!</h2>
+            <h2>Bem-vindo ao Quiz!</h2>
+
             <p>
-                A maquiagem pode ser uma forma de expressar personalidade,
-                criatividade e estilo.
+                Teste seus conhecimentos sobre maquiagem,
+                produtos de beleza e cuidados com a pele.
             </p>
-            <button onclick="mostrarMensagem()">✨ Descobrir mais</button>
-            <p id="mensagem"></p>
+
+            <p>
+                Responda às perguntas e descubra
+                quantos pontos você consegue fazer! ✨
+            </p>
+
+            <button class="iniciar-btn">
+                Começar Quiz
+            </button>
+
         </section>
 
-        <section id="produtos">
-            <h2>💋 Principais produtos</h2>
+        <!-- PERGUNTA -->
+        <section class="quiz">
 
-            <div class="cards">
+            <div class="caixa-perguntas"></div>
 
-                <div class="card">
-                    <h3>💄 Batom</h3>
-                    <p>Ajuda a destacar e colorir os lábios.</p>
-                </div>
+            <div class="caixa-alternativas"></div>
 
-                <div class="card">
-                    <h3>✨ Base</h3>
-                    <p>Ajuda a uniformizar a aparência da pele.</p>
-                </div>
-
-                <div class="card">
-                    <h3>🌸 Blush</h3>
-                    <p>Adiciona cor e destaque às bochechas.</p>
-                </div>
-
-                <div class="card">
-                    <h3>👁️ Sombra</h3>
-                    <p>Permite criar diferentes estilos e combinações.</p>
-                </div>
-
-            </div>
         </section>
 
-        <section id="historia">
-            <h2>📖 Nossa história</h2>
+        <!-- RESULTADO -->
+        <section class="caixa-resultado">
 
-            <p>
-                Imagine uma pessoa que está começando a descobrir o mundo
-                da maquiagem. Ela conhece diferentes produtos e começa a
-                experimentar novos estilos.
-            </p>
+            <h2>🎉 Resultado!</h2>
 
-            <p>
-                Com a ajuda da tecnologia e da inteligência artificial,
-                ela encontra novas ideias e percebe que a maquiagem pode
-                ser uma maneira divertida de expressar sua personalidade.
-            </p>
+            <p class="texto-resultado"></p>
 
-            <p>
-                No final dessa jornada, ela aprende que não existe apenas
-                um jeito certo de usar maquiagem. Cada pessoa pode criar
-                seu próprio estilo!
-            </p>
-        </section>
+            <button class="novamente-btn">
+                Jogar novamente
+            </button>
 
-        <section id="quiz">
-            <h2>🧠 Quiz da Maquiagem</h2>
-
-            <p>Qual produto é usado principalmente para colorir os lábios?</p>
-
-            <button onclick="responder('batom')">Batom</button>
-            <button onclick="responder('base')">Base</button>
-            <button onclick="responder('blush')">Blush</button>
-
-            <p id="resultado"></p>
         </section>
 
     </main>
 
-    <footer>
-        <p>💄 Projeto sobre Maquiagem | Desenvolvido com HTML, CSS e JavaScript</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <script type="module" src="js/script.js"></script>
 
 </body>
+
 </html>
